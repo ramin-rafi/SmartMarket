@@ -1,0 +1,16 @@
+.flex-item {
+	&-left {
+		padding: 32px auto;
+		width: 20%;
+	}
+	&-middle {
+		width: 60%;
+		padding-left: 101px;
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+	&-right {
+		width: 20%;
+		padding: 32px auto;
+	}
+}

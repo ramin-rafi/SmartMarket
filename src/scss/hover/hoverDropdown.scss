@@ -1,0 +1,44 @@
+.dropdownn {
+	display: inline-block;
+	position: relative;
+	&:hover {
+		.dropdown-content {
+			display: block;
+		}
+	}
+	
+	.scroller {	
+		height: 200px;
+		overflow-y: scroll !important;
+		overflow-x: hidden !important;
+	}
+}
+
+
+.dropdown{
+	&-content {
+		background-color: $white;
+		left: -200px;
+		top: 20px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		display: none;
+		min-height: 400px;
+		position: absolute;
+		min-width: 300px;
+		z-index: 1;
+		img {
+			height: 120px;
+			width:100px;
+		}
+		a {
+			color: black;
+			display: block;
+			text-decoration: none;
+		}
+	}
+	&-image {
+		max-height: 90px;
+		max-width: 90px;	
+	}
+}
+

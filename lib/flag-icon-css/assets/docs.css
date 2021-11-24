@@ -1,0 +1,42 @@
+.header {
+  margin: 0 0 48px;
+  padding: 32px 0;
+  text-align: center;
+  background: linear-gradient(90deg, #2b8a3e, #e8590c);
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.header .btn {
+  margin: 0 4px;
+}
+
+
+.no-wrap {
+  white-space: nowrap;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flag {
+  border-radius: 2px;
+  border: 1px solid #dee2e6;
+  margin-bottom: 32px;
+  padding: 8px;
+}
+
+.flag-country {
+  width: 100%;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.flag-img {
+  width: 100%;
+}
+
+.flag-code {
+  color: #adb5bd;
+  margin-right: 4px;
+  font-size: 0.9em;
+}

@@ -1,0 +1,66 @@
+header {
+	.navbar { 
+		max-height: $min-lh !important;
+		.container {
+			&-fluid {
+				margin: $mp-0 $mp-5 !important;
+				.navbar-collapse {
+					font-size: $min-fs !important;
+					line-height: $min-lh !important;
+					.text-uppercase {
+						padding-right: 40px;
+					}
+					.dropdown {
+						padding-right: $mp-2;
+						select {
+							@include dropdown-reset;
+						}
+						&:active, &:focus {
+							border: 0;
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+.main-header {
+	font-size: $main-fs;
+	line-height: $main-lh;
+	max-height: 98px;
+	.navbar {
+		font-size: 12px;
+		font-weight: $normal;
+		padding: $mp-0 $mp-1;
+		letter-spacing: $mp-0;
+		line-height: $mp-2;
+		.container {
+			&-fluid {
+				margin: $mp-0 $mp-5 !important;
+			}
+		}
+		&-header {
+			margin: $mp-1 auto;
+		}
+		.navbar-nav {
+			flex-direction: row;
+		}
+	}
+	.navbar-nav {
+		li {
+			padding: $mp-0 $mp-1;
+		}
+	}
+	.navbar-btn {
+		font-size: 13px;
+		line-height: $mp-1;
+		font-weight: 400;
+		text-align: end;
+		@include reset-a;
+	}
+}
+
+
+
