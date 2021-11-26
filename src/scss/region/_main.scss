@@ -1,0 +1,247 @@
+main {
+	.container {
+		max-width: 100%;
+		padding: $mp-0 $mp-5 !important;
+		.block-product {
+			@include section-title;
+		}
+		.mainSlider {
+			margin-left: 15px !important;
+			max-width:305px;
+		}
+
+		.mainAsideSlider{
+			.card {
+				border: 1px solid $milk !important;
+				.asideSlider-title {
+					font-size: 16px;
+					line-height: 24px;
+				}
+				.asideSlider-link {
+					font-size: 12px;
+					margin-top: 14px;
+				}
+				
+			}
+			@include asideSlider-card;
+			.slick-prev:before {
+				@include arrows;
+				content: '<';
+				margin-top: -242px;
+				margin-left: 272px;
+			}
+			.slick-next:before {
+				@include arrows;
+				margin-top: -242px;
+				margin-left: -28px;
+			}
+			
+		}
+		aside {
+			max-width: 20%;
+			.parent-title {
+				width: 90%;
+				margin-right: 3px;
+				line-height: 48px;
+				font-size: 14px;
+				i {
+					padding: $mp-0 $mp-1;
+				}
+			}
+			.navbar {
+				.navbar-nav {
+					li {
+						width: 92%;
+						display: block;
+						padding-bottom: 6px;
+						padding-top: 6px;
+						padding-left: 12px;
+						margin-left: 12px;
+						i {
+							font-size: 14px;
+						}
+						.menu-title {
+							font-size: 12px;
+							letter-spacing: .5px;
+							padding-left: 6px;
+						}
+					}
+				}
+			}
+			
+			.slider {
+				max-width: 215px;
+			}
+			.asideSlider{
+				@include asideSlider-card;
+				.slick-prev:before {
+					@include arrows;
+					content: '<';
+					margin-top: -247px;
+					margin-left: 197px;
+				}
+				.slick-next:before {
+					@include arrows;
+					margin-top: -247px;
+					margin-left: 10px;
+				}
+				
+			}
+		}
+		article {
+			line-height: 52px;
+			font-size: 14px;
+			max-width: 80%;
+			.input-group {
+				height: 40px;
+				width: 100%;
+				
+				letter-spacing: 0;
+				line-height: 40px;
+				
+				input {
+					font-size: 12px;
+					border-radius: 0;
+				}
+				&-text {
+					font-size: 13px;
+					letter-spacing: 1px;
+				    text-align: center;
+					padding: 0 33px;
+					border-radius: 0;
+					width: 124px;
+				}
+			}
+			.text-order {
+				font-size: 13px;
+				line-height: 1;
+				padding-right: 40px;
+				padding-top: 4px;
+				i {
+					font-size: 18px;
+					padding-right: 10px;
+				}
+			}
+			.wishlists {
+				padding-right: 20px;
+				i {
+					font-size: 18px;
+				}
+			}
+			.cart {
+				font-size: 18px;
+				.badge {
+					font: {
+						size: 8px;
+						weight: 700;
+						family: "Rubik", sans-serif;
+					}
+				}
+
+			}
+			.carousel {
+				.carousel-item {
+					.caption {
+						top: 20%;
+						left: 15%;
+						letter-spacing: 1px;
+						line-height: 24px;
+					}
+				}
+			}
+			.row {
+				padding-left: 10px;				
+			}
+			.card {
+				border-radius: 0;
+				padding-left: 10px !important;
+				padding-bottom: 20px !important;  
+				border: none !important;
+				.caption {
+					top: 15%;
+					left: 12%;
+					letter-spacing: 0.5px;
+					line-height: 24px;
+					h6 {
+						font-size: 16px;
+    					line-height: 20px;
+					}
+				}
+			}
+			.cardSlider {
+				.slick-prev:before {
+					@include arrows;
+					content: '<';
+					margin-top: -144px;
+					margin-left: 1067px;
+				  }
+				  
+				  .slick-next:before {
+					@include arrows;
+					margin-top: -144px;
+					margin-left: -32px;
+				  }
+				.card {
+					.caption {
+						top: 65%;
+						margin: 0 auto;
+						padding: 0 auto;
+					}
+				}
+			}
+			.block-product {
+				margin-top: 101px;
+				
+			}
+			.asideSlider-cards {
+				@include asideSlider-card;
+				img {
+					max-height: 160px;
+					max-width: 140px;
+					
+				}
+				.card-body {
+					max-width: 140px;
+				}
+			}
+			.asideSlider{
+				@include asideSlider-card;
+				.slick-prev:before {
+					@include arrows;
+					content: '<';
+					margin-top: -250px;
+					margin-left: 1050px;
+				}
+				.slick-next:before {
+					@include arrows;
+					margin-top: -250px;
+					margin-left: -24px;
+				}
+				.card {
+					margin: auto 15px;
+					border: 1px solid $milk !important;
+					.card-body {
+						max-width: 140px;
+					}
+				}
+			}
+		}
+		.mainCards {
+			@include asideSlider-card;
+			.card {
+				border: 1px solid $milk !important;
+				
+			}
+		}
+		.promotion {
+			margin-bottom: 100px;
+		}
+		.ad {
+			
+			max-width: 220px;
+			max-height: 150px;
+		}
+
+		
+	}
+}

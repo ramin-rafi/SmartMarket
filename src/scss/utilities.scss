@@ -14,3 +14,11 @@
 		padding: 32px auto;
 	}
 }
+
+.col {
+	&-half {
+		max-width: 17.5%;
+		margin: 0 10px;
+	}
+}
+

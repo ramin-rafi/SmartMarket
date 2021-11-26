@@ -12,3 +12,56 @@
 @mixin reset-a {
 	color: $dark !important;
 }
+
+@mixin arrows {
+	content: '>';
+	font-weight: 500;
+	font-size: 20px;
+	position: absolute;
+	font-family:  "Rubik" , sans-serif;
+	color: $gray;
+	background-color: #eee;
+	padding: 5px 10px;
+}
+
+@mixin asideSlider-card {
+	font-size: 12px;
+	line-height: 20px !important;
+	.card {
+		border: 2px solid $primary;
+		border-radius: 0;	
+	}
+	.asideSlider-tag {
+		line-height: $mp-2;
+	}
+	.asideSlider-title {
+		font-size: 14px;
+		font-weight: 500;
+	}
+	img {
+		padding: 10px 15px;
+	}
+}
+
+@mixin section-title {
+	.sections-title {
+		position: relative;
+		font-size: 17px;
+		font-weight: 500;
+		margin-left: $mp-1;
+		padding-bottom: 12px;
+		margin-bottom: $mp-2;
+		display: inline-block;
+		width: 100%;
+		&:after {
+			content: "";
+			background: $primary;
+			width: 70px;
+			height: 3px;
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			bottom: 0;
+		}
+	}
+}
