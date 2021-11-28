@@ -9,7 +9,6 @@ main {
 			margin-left: 15px !important;
 			max-width:305px;
 		}
-
 		.mainAsideSlider{
 			.card {
 				border: 1px solid $milk !important;
@@ -20,6 +19,10 @@ main {
 				.asideSlider-link {
 					font-size: 12px;
 					margin-top: 14px;
+					padding-bottom: 3px;
+					&:hover {
+						border-bottom: 1px solid $primary
+					}
 				}
 				
 			}
@@ -35,16 +38,18 @@ main {
 				margin-top: -242px;
 				margin-left: -28px;
 			}
-			
 		}
 		aside {
 			max-width: 20%;
 			.parent-title {
-				width: 90%;
+				max-width: 218px;
 				margin-right: 3px;
-				line-height: 48px;
+				line-height: 52px;
 				font-size: 14px;
+				font-weight: 500;
 				i {
+					font-size: 18px;
+    				line-height: 50px;
 					padding: $mp-0 $mp-1;
 				}
 			}
@@ -58,10 +63,10 @@ main {
 						padding-left: 12px;
 						margin-left: 12px;
 						i {
-							font-size: 14px;
+							font-size: 16px;
 						}
 						.menu-title {
-							font-size: 12px;
+							font-size: 14px;
 							letter-spacing: .5px;
 							padding-left: 6px;
 						}
@@ -95,10 +100,8 @@ main {
 			.input-group {
 				height: 40px;
 				width: 100%;
-				
 				letter-spacing: 0;
 				line-height: 40px;
-				
 				input {
 					font-size: 12px;
 					border-radius: 0;
@@ -146,6 +149,7 @@ main {
 						left: 15%;
 						letter-spacing: 1px;
 						line-height: 24px;
+						
 					}
 				}
 			}
@@ -162,9 +166,13 @@ main {
 					left: 12%;
 					letter-spacing: 0.5px;
 					line-height: 24px;
+					font-weight: 500;
 					h6 {
 						font-size: 16px;
     					line-height: 20px;
+					}
+					&:hover {
+						color: $primary !important;
 					}
 				}
 			}
@@ -194,11 +202,17 @@ main {
 				
 			}
 			.asideSlider-cards {
+				.card {
+					padding-left: 5px !important;
+					padding-right: 5px !important;
+					&:hover {
+						filter:drop-shadow(.3rem .3rem 0.8rem $milkHover);	
+					}
+				}
 				@include asideSlider-card;
 				img {
 					max-height: 160px;
 					max-width: 140px;
-					
 				}
 				.card-body {
 					max-width: 140px;
@@ -223,14 +237,40 @@ main {
 					.card-body {
 						max-width: 140px;
 					}
+					&:hover {
+						filter:drop-shadow(.3rem .3rem 0.8rem $milkHover);	
+					}
 				}
+			}
+		}
+		.cards-quickView {
+			top:215px;
+			margin: auto 8px;
+			right:0;
+			left: 0;
+		}
+		.v-hidden {
+			opacity: 0 !important;
+			&:hover {
+				opacity: 1 !important;
 			}
 		}
 		.mainCards {
 			@include asideSlider-card;
 			.card {
 				border: 1px solid $milk !important;
-				
+				&:hover {
+					filter:drop-shadow(.3rem .3rem 0.8rem $milkHover);
+					padding-left: 15px !important;
+					padding-right: 15px !important;
+				}
+			}
+		}
+		.recently-viewed {
+			.col-half {
+				&:hover {
+					border: 0.25px solid $primary;
+				}
 			}
 		}
 		.promotion {

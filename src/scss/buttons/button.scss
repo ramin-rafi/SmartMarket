@@ -1,42 +1,19 @@
 .btn {
-  border-radius: 0;
-  border: 1px solid;
-
-  &:hover {
-    background-color: $black;
-    color: $white;
+  &:hover,
+  &-primary {
+    background-color: $primary;
+    color: $white !important;
   }
-
-  &-transparent {
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    color: $white;
-    letter-spacing: 2px;
-
+  &-primary {
+    font-weight: 500;
+  }
+  &-light {
+   opacity: 0;
+    background-color: $milk;
     &:hover {
-      background-color: $white;
-      color: $black;
+      background-color: $milkHover;
+      color: $black !important;
+      opacity: 1 !important;
     }
   }
-  &-checkout {
-    background-color: $black;
-    color:$white;
-    padding: $mp-1 $mp-4;
-    border-radius: 4px;
-    &:hover {
-      background-color: $turquoise;
-      color: $white;
-    }
-  }
-  &-turquoise {
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-}
-
-.checkout .btn-checkout {
-	padding-left: $mp-3+$mp-3;
-	padding-right: $mp-3+$mp-3;
-  border: none;
 }

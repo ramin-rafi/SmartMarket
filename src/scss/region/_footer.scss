@@ -67,6 +67,9 @@ footer {
 				color: $white;
 				background-color: $primary !important;
 				border-radius: 40px;
+				&:hover {
+					background-color: $gray !important;
+				}
 			}
 		}
 	}
@@ -76,5 +79,9 @@ footer {
 	}
 	a {
 		color:inherit;
+		&:hover {
+			background-color: $primary;
+			color: $white !important; 
+		}
 	}
 }
