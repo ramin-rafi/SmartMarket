@@ -46,4 +46,108 @@
 			width: 100%;
 		}
 	}
+	.main-header {
+		.flex-item {
+			&-right, &-middle {
+				display: none !important;
+			}
+			&-left {
+				width: auto !important;
+			}
+		}	
+	}
+	main {
+		.container {
+			overflow-x: hidden !important;
+			.slick-prev::before,.slick-next::before{
+				display: none !important;
+			}
+			.ad {
+				max-width: 100%;
+			}
+			aside {
+				max-width: 100%;
+				.navbar {
+					display: none !important;
+					width: 100%;
+					.navbar-nav {
+						padding-right:0 !important;
+						li {
+							width: 100%;
+						}
+					}
+				}
+				.parent-title {
+					max-width: 100%;
+					line-height: 40px;
+					height: 40px;
+					i {
+						line-height: 40px;
+					}
+				}
+			}
+			article {
+				max-width: 100%;
+				.all-departments {
+					display: none !important;
+				}
+				.card-img {
+					max-width: 100%;
+					max-height: 100%;
+				}
+				
+				.carousel-inner {
+					margin: 25px auto;
+					.caption {
+						top: 10% !important;
+					}
+					h2 {
+						font-size: 16px;
+					}
+					p {
+						font-size: 12px;
+					}
+					.btn {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		.col-half {
+			max-width: 100%;
+			@include card-mediaQuery;
+		}
+		.asideSliderr {
+			.card {
+				@include card-mediaQuery;
+			}
+		}
+		.card {
+			@include card-mediaQuery;
+			.caption {
+				top: 5% !important;
+			} 
+		}
+		.mainSlider,
+		.ads {
+			.card {
+				img {
+					max-width: 100%;
+					max-height: 100%;
+				}
+				.asideSlider-link {
+					margin-left: 20px;
+				}
+			}
+		}
+		.cardSlider {
+			.card {
+				img {
+					max-width: 100% !important;
+					max-height: 100% !important;
+				}
+			}
+		}
+		
+	}
 }

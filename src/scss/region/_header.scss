@@ -36,6 +36,12 @@ header {
 		padding: $mp-0 $mp-1;
 		letter-spacing: $mp-0;
 		line-height: $mp-2;
+		.nav-item {
+
+			a:hover {
+				color: $primary !important;
+			}
+		}
 		.container {
 			&-fluid {
 				margin: $mp-0 $mp-5 !important;
@@ -54,13 +60,21 @@ header {
 		}
 	}
 	.navbar-btn {
-		font-size: 13px;
+		font-size: 14px;
 		line-height: $mp-1;
 		font-weight: 400;
 		text-align: end;
 		@include reset-a;
+		a:hover {
+			color: $primary !important;
+		}
 	}
 }
 
-
-
+.fixed .navbar-main {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}

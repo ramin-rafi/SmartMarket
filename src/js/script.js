@@ -84,7 +84,7 @@ $('.promotion').slick({
     {
       breakpoint: 950,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 5,
         infinite: true,
         dots: true
       }
@@ -92,13 +92,13 @@ $('.promotion').slick({
     {
       breakpoint: 767,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 4,
       }
     },
     {
       breakpoint: 540,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
       }
     }
   ]

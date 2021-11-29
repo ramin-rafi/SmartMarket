@@ -13,6 +13,47 @@
 	color: $dark !important;
 }
 
+@mixin navbar-hover {
+	a {
+		&:hover {
+			color: $white !important;
+		}
+	}	
+}
+
+@mixin card-mediaQuery {
+	.text-start {
+		text-align: center !important;
+	}
+	img {
+		margin: 0 auto;
+		max-height: 160px;
+		max-width: 140px;
+	}
+	.v-hidden,
+	.cards-quickView {
+		opacity: 1 !important;
+	}
+	.v-hidden {
+		.btn-primary {
+			width: 70%;
+		}
+		.fa-heart {
+			width: 35px;
+			height: 35px;
+			line-height: 15px;
+		}
+	}
+	.card-body {
+		max-width: 100% !important;
+		margin-top: 30px !important;
+		.d-block {
+			display: inline-block !important;
+			margin-left: 20px;
+		}
+	}
+}
+
 @mixin arrows {
 	content: '>';
 	font-weight: 500;
@@ -22,10 +63,6 @@
 	color: $gray;
 	background-color: #eee;
 	padding: 5px 10px;
-	&:hover {
-		background-color: $dark !important;
-		color: $white !important;
-	}
 }
 
 @mixin asideSlider-card {
