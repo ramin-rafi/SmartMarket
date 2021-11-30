@@ -1,5 +1,5 @@
 // All Style file Import here
-import './sass/theme.scss';
+import "./sass/theme.scss";
 
 
 // All script file import here

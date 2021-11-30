@@ -1,5 +1,5 @@
 const path = require('path');
-const loader = require("sass-loader");
+const loader = require("style-loader");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -49,16 +49,10 @@ module.exports = {
 				use: [
 					// Chain of Loaders Invoke RTL direction
 					// 'style-loader', 'css-loader', 'sass-loader',
-                    {
-                        options:{
-                            sourceMap: true,
-                        },
-                    }
-                    ,
                     MiniCssExtractPlugin.loader, "css-loader", "sass-loader",
 				],
 			},
-        ]
+        ],
     },
 
     plugins: [
