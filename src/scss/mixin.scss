@@ -106,3 +106,8 @@
 		}
 	}
 }
+
+@mixin bounce-animation {
+	animation-duration: 1.5s;
+    animation-fill-mode: both;
+}

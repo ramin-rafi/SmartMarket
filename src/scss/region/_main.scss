@@ -2,6 +2,12 @@ main {
 	.container {
 		max-width: 100%;
 		padding: $mp-0 $mp-5 !important;
+		
+		a {
+			&:hover {
+				color: $primary !important;
+			}
+		}
 		.block-product {
 			@include section-title;
 		}
@@ -40,7 +46,8 @@ main {
 			}
 		}
 		aside {
-			max-width: 20%;
+			max-width: 18%;
+			padding-right: 0 !important;
 			.parent-title {
 				max-width: 218px;
 				margin-right: 3px;
@@ -94,9 +101,10 @@ main {
 			}
 		}
 		article {
+			padding-left: 0 !important;
 			line-height: 52px;
 			font-size: 14px;
-			max-width: 80%;
+			max-width: 82%;
 			.input-group {
 				height: 40px;
 				width: 100%;
@@ -145,10 +153,14 @@ main {
 			.carousel {
 				.carousel-item {
 					.caption {
-						top: 20%;
+						top: 28%;
 						left: 15%;
 						letter-spacing: 1px;
 						line-height: 24px;
+						h2 {
+							font-size: 36px !important;
+							line-height: 36px;
+						}
 						
 					}
 				}
@@ -181,13 +193,13 @@ main {
 					@include arrows;
 					content: '<';
 					margin-top: -144px;
-					margin-left: 1067px;
+					margin-left: 1100px;
 				  }
 				  
 				  .slick-next:before {
 					@include arrows;
 					margin-top: -144px;
-					margin-left: -32px;
+					margin-left: -38px;
 				  }
 				.card {
 					.caption {
@@ -223,12 +235,12 @@ main {
 				.slick-prev:before {
 					@include arrows;
 					content: '<';
-					margin-top: -250px;
-					margin-left: 1050px;
+					margin-top: -278px;
+					margin-left: 1090px;
 				}
 				.slick-next:before {
 					@include arrows;
-					margin-top: -250px;
+					margin-top:  -278px;
 					margin-left: -24px;
 				}
 				.card {

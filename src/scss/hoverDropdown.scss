@@ -7,7 +7,6 @@
 			display: block;
 		}
 	}
-	
 	.scroller {	
 		overflow-y: scroll !important;
 		overflow-x: hidden !important;
@@ -30,8 +29,15 @@
 }
 
 aside {
+	li {
+		&:hover {
+			color: $primary !important;
+		}
+	}
 	.dropdown {
 		&-content {
+			transition: 1s;
+			box-shadow: none !important;
 			min-width: 230px;
 			left: 107%;
 			top: -8px;
@@ -93,9 +99,9 @@ aside {
 }
 
 .angle-right-icon {
-	padding-left: 110px !important;
+	padding-left: 100px !important;
 }
 
 .angle-right-iconn {
-	padding-left: 140px !important;
+	padding-left: 130px !important;
 }

@@ -66,6 +66,7 @@
 				max-width: 100%;
 			}
 			aside {
+				overflow-x: hidden !important;
 				max-width: 100%;
 				.navbar {
 					display: none !important;
@@ -87,6 +88,7 @@
 				}
 			}
 			article {
+				overflow-x: hidden !important;
 				max-width: 100%;
 				.all-departments {
 					display: none !important;
