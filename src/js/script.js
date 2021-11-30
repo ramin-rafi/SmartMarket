@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import '../../node_modules/slick-carousel/slick/slick.min';
+
 $('.cardSlider').slick({
     dots: true,
     infinite: true,
@@ -28,7 +31,6 @@ $('.cardSlider').slick({
       }
     ]
 });
-
 
 $('.asideSliderr').slick({
   arrows: true,
