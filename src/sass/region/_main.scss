@@ -2,14 +2,86 @@ main {
 	.container {
 		max-width: 100%;
 		padding: $mp-0 $mp-5 !important;
-		
 		a {
 			&:hover {
 				color: $primary !important;
 			}
 		}
+		select {
+			padding: 5px 10px;
+			line-height: 1.35;
+			height: 36px;
+			border: 1px solid #cbcbcb;
+			background: #eee;
+			outline: 0;
+			border-color: #eee;
+		}
 		.block-product {
 			@include section-title;
+		}
+		.collection-view {
+			line-height: 1;
+			text-align: left;
+		}
+		.plp-body {
+			padding-top: 40px;
+			line-height: 24px;
+			.title {
+				font-weight: 600;
+			}
+			p {
+				line-height: 28px;
+			}
+		}
+		.list-link {
+			margin: 50px auto;
+			.btn-primary {
+				line-height: 24px;
+			}
+			.price-box {
+				font-weight: 600;
+			}
+		}
+		.page-total {
+			padding: 5px 0 5px 0;	
+			line-height: 1;
+			letter-spacing: 1px;
+			border-bottom: 1px solid;
+			margin-right: 180px;
+		}
+		.block-title {
+			position: relative;
+			span,
+			h2 {
+				letter-spacing: 1px;
+				margin-bottom: 15px;
+				margin-top: 30px;
+				padding: 0 0 5px;
+				font-weight: 600;
+			}
+			h2 {
+				&::after{
+					content: "";
+					width: 30px;
+					height: 3px;
+					background: $dark;
+					position: absolute;
+					top: 30px;
+					bottom: 0;
+					left: 0;
+				}
+			}
+		}
+		.widget-content {
+			ul {
+				list-style-type: square;
+				margin-left: 15px;
+			}
+			li {
+				border-color: #eaeaea;
+				line-height: 35px;
+			
+			}
 		}
 		.mainSlider {
 			margin-left: 15px !important;
@@ -60,6 +132,7 @@ main {
 					padding: $mp-0 $mp-1;
 				}
 			}
+		
 			.navbar {
 				.navbar-nav {
 					li {
@@ -230,6 +303,27 @@ main {
 					max-width: 140px;
 				}
 			}
+
+			.articleSlider-cards {
+				.card {
+					padding-left: 15px !important;
+					padding-right: 15px !important;
+					border: 1px solid #eee !important;
+					&:hover {
+						filter:drop-shadow(.3rem .3rem 0.8rem $milkHover);	
+					}
+				}
+				@include asideSlider-card;
+				img {
+					max-height: 224px;
+					max-width: 220px;
+				}
+				.fa-heart {
+					padding: 12px;
+				}
+			}
+
+
 			.asideSlider{
 				@include asideSlider-card;
 				.slick-prev:before {

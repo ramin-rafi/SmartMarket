@@ -16,3 +16,16 @@ body {
 	box-sizing: border-box;
 }
 
+.current-tab {
+	padding-top: 10px;
+    padding-left: 15px;
+    margin: 12px 0 15px;
+    padding-bottom: 30px;
+    background: 0 0;
+    line-height: normal;
+    border-bottom: 1px solid #eee;
+	span {
+		letter-spacing: .5px;
+	}
+}
+
