@@ -80,8 +80,7 @@ footer {
 	a {
 		color:inherit;
 		&:hover {
-			background-color: $primary;
-			color: $white !important; 
+			color:$primary !important;
 		}
 	}
 }

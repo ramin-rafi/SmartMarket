@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import '../../node_modules/bootstrap/dist/js/bootstrap.min';
 import '../../node_modules/slick-carousel/slick/slick.min';
 
 

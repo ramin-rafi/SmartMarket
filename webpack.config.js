@@ -1,10 +1,15 @@
 const path = require('path');
 const loader = require("style-loader");
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     // mode: "development",
     mode: "production",
+
+	
 
     entry: './src/index.js',
 
@@ -15,6 +20,16 @@ module.exports = {
 		// path: './dist',
 		path: path.resolve(__dirname, "./dist"),
         filename: "js/bundle.js",
+	},
+
+	devServer: {
+		static: {
+		  directory: path.join(__dirname, ''),
+		},
+		historyApiFallback: true, // true for index.html upon 404, object for multiple paths
+		compress: true,
+		port: 8080,
+		allowedHosts: 'auto',
 	},
 
     module: {
@@ -51,13 +66,30 @@ module.exports = {
 					// 'style-loader', 'css-loader', 'sass-loader',
                     MiniCssExtractPlugin.loader, "css-loader", "sass-loader",
 				],
-			},
+			}
         ],
     },
 
     plugins: [
+		new webpack.ProvidePlugin({
+			$: "jquery",
+			jQuery: "jquery"
+		}),
         new MiniCssExtractPlugin({
             filename: "css/theme.css",
         }),
-    ]
+		new HtmlWebpackPlugin({
+			template: 'src/index.html'
+		}),
+		new CopyPlugin({ 
+			patterns: [
+				{ from: 'src/images', to: 'images'  },				
+			],
+		})
+    ],
+	performance: {
+		hints: false,
+		maxEntrypointSize: 512000,
+		maxAssetSize: 512000
+	}
 };
