@@ -90,6 +90,15 @@
 	font-size: 25px !important;
 }
 
+.letterspace {
+	letter-spacing: 1.5px !important;
+	line-height: 26px !important;
+}
+
+.ls-half {
+	letter-spacing: 0.5px !important;
+}
+
 .fw {
 	&-600 {
 		font-weight: 600;

@@ -94,6 +94,10 @@ module.exports = {
 			filename: 'faqs.html',
 			template: 'src/faqs.html'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'blog.html',
+			template: 'src/blog.html'
+		}),
 		
 		
 		// new CopyPlugin({ 
