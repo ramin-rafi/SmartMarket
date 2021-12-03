@@ -1,9 +1,10 @@
 const path = require('path');
 const loader = require("style-loader");
-const webpack = require('webpack')
+const webpack = require('webpack');
+const ESLintPlugin = require('eslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
+// const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     // mode: "development",
@@ -81,11 +82,21 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: 'src/index.html'
 		}),
-		new CopyPlugin({ 
-			patterns: [
-				{ from: 'src/images', to: 'images'  },				
-			],
-		})
+        new HtmlWebpackPlugin({
+            filename: 'pdp.html',
+            template: 'src/pdp.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'plp.html',
+			template: 'src/plp.html'
+		}),
+		
+		
+		// new CopyPlugin({ 
+		// 	patterns: [
+		// 		{ from: 'src/images', to: 'images'  },				
+		// 	],
+		// })
     ],
 	performance: {
 		hints: false,
