@@ -98,6 +98,14 @@ module.exports = {
 			filename: 'blog.html',
 			template: 'src/blog.html'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'contact.html',
+			template: 'src/contact.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'aboutus.html',
+			template: 'src/aboutus.html'
+		}),
 		
 		
 		// new CopyPlugin({ 
