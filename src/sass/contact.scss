@@ -9,6 +9,22 @@
 	margin-left: 35%;
 	overflow-x: hidden;
 }
+
+.accordion-button {
+	padding: 0.65rem 1.25rem !important;
+}
+
+.accordion-button::after {
+	content: ">";
+	transform: rotate(90deg);
+	background-image: none;
+	color: white;
+}
+
+.accordion-button:not(.collapsed)::after{
+	background-image: none !important;
+	transform: rotate(-180deg) !important;
+}
 // .abs {
 // 	text-align: center;
 // 	position: absolute;
